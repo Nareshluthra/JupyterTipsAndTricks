@@ -106,3 +106,8 @@ venv.bak/
 # csv
 Freemont.csv
 *.csv
+
+# msc
+
+Untitled.ipynb
+Scratch.ipynb

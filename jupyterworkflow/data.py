@@ -33,7 +33,7 @@ def get_fremont_data(filename='Freemont.csv' , url=FREEMONT_URL ,
     data = pd.read_csv('Freemont.csv',index_col='Date')
 
     try:
-    	data.index = pd.to_datetime(data.index, format='%m/%d/%Y %H:%M:%S %p')
+    	data.index = pd.to_datetime(data.index, format='%m/%d/%Y %I:%M:%S %p')
     except TypeError:
     	data.index = pd.to_datetime(data.index)
     data.columns =['East','West']
